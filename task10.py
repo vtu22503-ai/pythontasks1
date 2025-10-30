@@ -1,0 +1,30 @@
+#pip install matplotlib
+import matplotlib.pyplot as plt
+
+languages = ['Java', 'Python', 'PHP', 'JavaScript', 'C#', 'C++']
+popularity = [22.2, 17.6, 8.8, 8, 7.7, 6.7]
+
+plt.bar(languages, popularity, color='b')
+plt.title('Popularity of Programming Languages')
+plt.xlabel('Programming Languages')
+plt.ylabel('Popularity')
+plt.show()
+
+
+
+import matplotlib.pyplot as plt
+
+# Step 1
+languages = ['Java', 'Python', 'PHP', 'JavaScript', 'C#', 'C++']
+popularity = [22.2, 17.6, 8.8, 8, 7.7, 6.7]
+
+# Step 2
+plt.pie(popularity, labels=languages, autopct='%1.1f%%')
+
+# Step 3
+plt.title('Popularity of Programming Languages')
+plt.legend(languages, loc="best")
+
+# Step 4
+plt.show()
+
